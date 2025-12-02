@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-dashboard.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/script.js" defer></script>
+    <title>Dashboard</title>
+</head>
+<body class="page-background">
+    <div class="container">
+        <header>
+            <nav>
+                <a href="estoque.html">
+                    <button class="bowlby-one-sc-regular">Estoque</button>
+                </a>
+                <a href="cadastro.html">
+                    <button class="bowlby-one-sc-regular">Cadastrar</button>
+                </a>
+                <a href="dashboard.html">
+                    <button class="bowlby-one-sc-regular">Pagina Principal</button>
+                </a>
+                <a href="login.html">
+                    <button class="bowlby-one-sc-regular">Login</button>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="bowlby-one-sc-regular mb-6">Dashboard - Sistema de Estoque</h1>
+                <div class="grid-cards">
+                    <div class="card-stat">
+                        <h3>Total de Produtos</h3>
+                        <p>5</p>
+                    </div>
+                    <div class="card-stat">
+                        <h3>Itens em Falta</h3>
+                        <p class="text-red-600">12</p>
+                    </div>
+                    <div class="card-stat">
+                        <h3>Movimentações Hoje</h3>
+                        <p class="text-green-600">0</p>
+                    </div>
+                    <div class="card-stat">
+                        <h3>Valor Total</h3>
+                        <p class="text-purple-600">R$ 12.50</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="mb-4">Avisos e Notificações</h2>
+                    <ul>
+                        <li class="flex items-center mb-2">
+                            <span class="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span>
+                            Produto "Caneta Azul" com estoque baixo (5 unidades restantes)
+                        </li>
+                        <li class="flex items-center mb-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Novo produto "Caderno Preto" cadastrado com sucesso
+                        </li>
+                        <li class="flex items-center mb-2">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Relatório mensal de vendas disponível
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 ITA. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script>
+        // Atualiza o dashboard automaticamente quando um item é adicionado ou alterado
+        const updateDashboard = () => {
+            console.log('Dashboard atualizado com os dados mais recentes.');
+            // Aqui você pode adicionar lógica para buscar e atualizar os dados do dashboard
+        };
+
+        // Simulação de atualização do dashboard
+        setInterval(updateDashboard, 5000); // Atualiza a cada 5 segundos
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Estilos específicos para a página de cadastro */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.button-group button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-primary {
+    background-color: #ff9800;
+    color: white;
+}
+.button-secondary {
+    background-color: #ccc;
+    color: black;
+}

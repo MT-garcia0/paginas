@@ -1,0 +1,27 @@
+/* Estilos específicos para a página de estoque */
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-header {
+    background-color: #ff9800;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+.table-body td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.badge-low {
+    background-color: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

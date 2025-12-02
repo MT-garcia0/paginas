@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-main.css">
+    <link rel="stylesheet" href="../css/style-cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cadastrar</title>
+</head>
+<body class="page-background">
+    <div class="container">
+        <header>
+            <nav>
+                <a href="estoque.html">
+                    <button class="bowlby-one-sc-regular">Estoque</button>
+                </a>
+                <a href="cadastro.html">
+                    <button class="bowlby-one-sc-regular">Cadastrar</button>
+                </a>
+                <a href="dashboard.html">
+                    <button class="bowlby-one-sc-regular">Pagina Principal</button>
+                </a>
+                <a href="login.html">
+                    <button class="bowlby-one-sc-regular">Login</button>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="bowlby-one-sc-regular mb-6">Cadastro de Produtos</h1>
+                <div class="card">
+                    <form id="productForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="productName" class="form-label">Nome do Produto</label>
+                                <input type="text" id="productName" name="productName" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="category" class="form-label">Categoria</label>
+                                <select id="category" name="category" required class="form-input">
+                                    <option value="">Selecione uma categoria</option>
+                                    <option value="escritorio">Escritório</option>
+                                    <option value="eletronicos">Eletrônicos</option>
+                                    <option value="limpeza">Limpeza</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sku" class="form-label">Código/SKU</label>
+                                <input type="text" id="sku" name="sku" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="quantity" class="form-label">Quantidade Inicial</label>
+                                <input type="number" id="quantity" name="quantity" min="0" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="price" class="form-label">Preço</label>
+                                <input type="number" id="price" name="price" min="0" step="0.01" required class="form-input">
+                            </div>
+                            <div class="form-group md:col-span-2">
+                                <label for="description" class="form-label">Descrição</label>
+                                <textarea id="description" name="description" rows="3" class="form-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button type="button" id="clearBtn" class="button-secondary">Limpar</button>
+                            <button type="submit" class="button-primary">Salvar</button>
+                            <button type="button" id="cancelBtn" class="button-secondary">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 ITA. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

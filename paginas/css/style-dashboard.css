@@ -1,0 +1,21 @@
+/* Estilos específicos para a página de dashboard */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card-stat {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+.card-stat h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.card-stat p {
+    font-size: 16px;
+    font-weight: bold;
+}

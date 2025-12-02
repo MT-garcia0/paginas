@@ -1,0 +1,45 @@
+/* Estilos padrão para todas as páginas */
+body {
+    font-family: 'Bowlby One SC', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+}
+header nav button:hover {
+    background-color: #e68900;
+}
+
+/* Expandindo a caixa verticalmente para cobrir mais espaço */
+.page-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 90%;
+    width: 100%;
+    height: 95%; /* Expandindo verticalmente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

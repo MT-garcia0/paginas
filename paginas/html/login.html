@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style-login.css">
+    <title>Login</title>
+</head>
+<body class="page-background">
+    <div class="container">
+        <header>
+            <nav>
+                <a href="estoque.html">
+                    <button class="bowlby-one-sc-regular">Estoque</button>
+                </a>
+                <a href="cadastro.html">
+                    <button class="bowlby-one-sc-regular">Cadastrar</button>
+                </a>
+                <a href="dashboard.html">
+                    <button class="bowlby-one-sc-regular">Pagina Principal</button>
+                </a>
+                <a href="login.html">
+                    <button class="bowlby-one-sc-regular">Login</button>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card login-form">
+                    <h2 class="bowlby-one-sc-regular text-center mb-6">Login</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username" class="form-label">Usuário/E-mail</label>
+                            <input type="text" id="username" name="username" required class="form-input">
+                            <span class="text-red-500 text-sm hidden" id="usernameError">Campo obrigatório</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Senha</label>
+                            <input type="password" id="password" name="password" required class="form-input">
+                            <span class="text-red-500 text-sm hidden" id="passwordError">Campo obrigatório</span>
+                        </div>
+                        <button type="submit" class="button-primary">Entrar</button>
+                    </form>
+                    <div class="mt-4 text-center">
+                        <a href="#" class="text-sm text-blue-500 hover:text-blue-700">Esqueci minha senha</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 ITA. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style-estoque.css">
+    <title>Gerenciamento de Estoque</title>
+</head>
+<body class="page-background">
+    <div class="container">
+        <header>
+            <nav>
+                <a href="estoque.html">
+                    <button class="bowlby-one-sc-regular">Estoque</button>
+                </a>
+                <a href="cadastro.html">
+                    <button class="bowlby-one-sc-regular">Cadastrar</button>
+                </a>
+                <a href="dashboard.html">
+                    <button class="bowlby-one-sc-regular">Pagina Principal</button>
+                </a>
+                <a href="login.html">
+                    <button class="bowlby-one-sc-regular">Login</button>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1 class="bowlby-one-sc-regular mb-6">Gerenciamento de Estoque</h1>
+                <div class="mb-6">
+                    <input type="text" id="search" placeholder="Buscar produtos..." class="search-input">
+                </div>
+                <div class="table">
+                    <table>
+                        <thead class="table-header">
+                            <tr>
+                                <th class="table-header">Nome</th>
+                                <th class="table-header">Categoria</th>
+                                <th class="table-header">Quantidade</th>
+                                <th class="table-header">Preço</th>
+                                <th class="table-header">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body" id="productTable">
+                            <tr>
+                                <td class="table-body">Caneta Azul</td>
+                                <td class="table-body">Escritório</td>
+                                <td class="table-body"><span class="badge-low">5</span></td>
+                                <td class="table-body">R$ 2,50</td>
+                                <td class="table-body">
+                                    <button>Editar</button>
+                                    <button>Excluir</button>
+                                    <button>Ajustar</button>
+                                </td>
+                            </tr>   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 ITA. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>
